@@ -9,6 +9,10 @@
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		
+		<!-- Scripts to get the Graphs to work -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- look for more up-to-date jQuery -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
 
 	</head>
 	<body>
@@ -46,6 +50,7 @@
 				<div class="col-md-4" id="users">
 					<!-- graph of users goes here -->
 					<p>Users</p>
+					<script src="./usersGraph.js"></script>
 				</div> <!-- end of users graph col -->
 				
 				<div class="col-md-4" id="sessions">
