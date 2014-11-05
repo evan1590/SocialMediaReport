@@ -11,16 +11,19 @@ var svg = d3.select("#users")
 var dataset = [];
 var month = [];
 // doing this asynchronously arrrgggggggggggggg! 
-$.getJSON('https://spreadsheets.google.com/feeds/list/1d__Mnshweud84zEuamDmTWljojQNFC2SHWTZ_GB0L9A/od6/public/values?alt=json', function(data) { 
+$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
 		console.log(data);
 	 	lengthofArray = data.feed.entry.length;
 	 	for (i = 0; i < lengthofArray; i++) { 
 			//console.log(data.feed.entry[i]['gsx$state']['$t']);
 			//console.log(data.feed.entry[i]['gsx$numberofusers']['$t']);
-			dataset.push(data.feed.entry[i]['gsx$numberofusers']['$t']);
-			console.log(dataset)
+			month.push(data.feed.entry[i]['gsx$users']['$t']);
+			//console.log(month)
 		};
-		//console.log(dataset);
+	console.log(month);
+	dataset.push(month[9]);
+	dataset.push(month[21]);
+	console.log(dataset);
 
 	svg.selectAll ("rect")
 		.data(dataset)
