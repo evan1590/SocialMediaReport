@@ -9,6 +9,7 @@
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./SocialMedaiReport.css">
 		
 		<!-- Scripts to get the Graphs to work -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- look for more up-to-date jQuery -->
@@ -45,13 +46,15 @@
 		<hr>
 		<div class="container"> <!-- Google Analytics --> 
 			<div>
-				<h1>Growth Year Over Year</h1>
+				<script src="./usersGraph.js"></script>
+				<h1 class="SectionTitle">Growth Year Over Year</h1>
+				<hr>
 			</div>
 			<div class="row"> <!-- threes colums for graphs -->
 				<div class="col-md-4" id="users">
 					<!-- graph of users goes here -->
 					<p>Users</p>
-					<script src="./usersGraph.js"></script>
+					
 				</div> <!-- end of users graph col -->
 				
 				<div class="col-md-4" id="sessions">
@@ -77,7 +80,8 @@
 		<hr>
 		<div class="container"> <!-- Facebook -->
 			<div>
-				<h1>Facebook</h1>
+				<script src="./FacebookGraphs.js"></script>
+				<h1 class="SectionTitle">Facebook</h1>
 			</div>
 			<div class="row">
 				<div class="col-md-6" id="facebookEngagement">
@@ -99,7 +103,7 @@
 		<hr>
 		<div class="container"> <!-- Twitter -->
 			<div>
-				<h1>Twitter</h1>
+				<h1 class="SectionTitle">Twitter</h1>
 			</div>
 			<div class="row">
 				<div class="col-md-6" id="twitterEngagement">
@@ -121,7 +125,7 @@
 		<hr>
 		<div class="container"> <!-- Instagram -->
 			<div>
-				<h1>Instagram</h1>
+				<h1 class="SectionTitle">Instagram</h1>
 			</div>
 			<div class="row">
 				<div class="col-md-6" id="instagramEngagement">

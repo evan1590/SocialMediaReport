@@ -1,6 +1,6 @@
 var svgWidth = 250;
 var svgHeight = 300;
-var barPadding = 10; 
+var barPadding = 15; 
 
 $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
 		//console.log(data);
@@ -38,7 +38,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		.attr("height", function(d) {
 			return d; 
 		})
-		.attr("fill", "purple");
+		.attr("fill", "#0266C8");
 
 	svg.selectAll("text")
 	   	.data(dataset)
@@ -101,7 +101,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			.attr("height", function(d) {
 				return d; 
 			})
-			.attr("fill", "purple");
+			.attr("fill", "#F2B50F");
 
 		svg.selectAll("text")
 		   	.data(tobeDisplayed)
@@ -118,7 +118,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				})
 				.attr("font-family", "sans-serif")
 				.attr("font-size", "11px")
-				.attr("fill", "white")
+				.attr("fill", "black")
 				.attr("text-anchor", "middle");
 		$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
 					//console.log(data);
@@ -163,7 +163,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 					.attr("height", function(d) {
 						return d; 
 					})
-					.attr("fill", "purple");
+					.attr("fill", "#00933B");
 
 				svg.selectAll("text")
 				   	.data(tobeDisplayed)
