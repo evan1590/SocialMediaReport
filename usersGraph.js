@@ -48,7 +48,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			return d;
 			})
 	   	.attr("x", function(d, i) {
-			return i * (svgWidth / dataset.length) + 40;
+			return i * (svgWidth / dataset.length) + 55;
 		})
 			.attr("y", function(d) {
 				 return svgHeight - d + 14;
@@ -111,7 +111,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				return d;
 				})
 		   	.attr("x", function(d, i) {
-				return i * (svgWidth / dataset.length) + 45;
+				return i * (svgWidth / dataset.length) + 55;
 			})
 				.attr("y", function(d) {
 					 return svgHeight - (d / 10) + 14;
@@ -120,6 +120,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				.attr("font-size", "11px")
 				.attr("fill", "black")
 				.attr("text-anchor", "middle");
+		
 		$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
 					//console.log(data);
 					var dataset = [];
@@ -173,7 +174,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 						return d;
 						})
 				   	.attr("x", function(d, i) {
-						return i * (svgWidth / dataset.length) + 45;
+						return i * (svgWidth / dataset.length) + 55;
 					})
 						.attr("y", function(d) {
 							 return svgHeight - (d / 100) + 14;

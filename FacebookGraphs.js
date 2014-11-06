@@ -46,7 +46,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		.attr("height", function(d) {
 			return d; 
 		})
-		.attr("fill", "purple");
+		.attr("fill", "#3b5998");
 
 	svg.selectAll("text")
 	   	.data(tobeDisplayed)
@@ -56,7 +56,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			return d;
 			})
 	   	.attr("x", function(d, i) {
-			return i * (svgWidth / dataset.length) + 45;
+			return i * (svgWidth / dataset.length) + 55;
 		})
 			.attr("y", function(d) {
 				 return svgHeight - (d / 10) + 14;
@@ -108,7 +108,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				.attr("height", function(d) {
 					return d; 
 				})
-				.attr("fill", "purple");
+				.attr("fill", "#8b9dc3");
 
 			svg.selectAll("text")
 			   	.data(tobeDisplayed)
@@ -118,7 +118,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 					return d;
 					})
 			   	.attr("x", function(d, i) {
-					return i * (svgWidth / dataset.length) + 45;
+					return i * (svgWidth / dataset.length) + 55;
 				})
 					.attr("y", function(d) {
 						 return svgHeight - (d * 10) + 14;
