@@ -5,3 +5,43 @@
 .rect: hover {
 	fill: brown;
 }
+
+#Facebook {
+	background-color: #3b5998;
+}
+
+#Facebook p{
+	color: white;
+	text-align: center;
+}
+
+#Facebook h1{
+	color: white;
+}
+
+#Twitter {
+	background-color: #4099FF;
+}
+
+#Twitter p{
+	color: white;
+	text-align: center;
+}
+
+#Twitter h1{
+	color: white;
+}
+
+#Instagram {
+	background-color: #3F729B;
+}
+
+#Instagram p{
+	color: white;
+	text-align: center;
+}
+
+#Instagram h1{
+	color: white;
+}
+

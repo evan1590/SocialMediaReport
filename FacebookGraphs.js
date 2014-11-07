@@ -2,6 +2,11 @@ var svgWidth = 250;
 var svgHeight = 300;
 var barPadding = 10; 
 
+// var margin = {top: 10, right: 30, bottom: 30, left: 30},
+//     width = 960 - margin.left - margin.right,
+//     height = 500 - margin.top - margin.bottom;
+
+
 
 $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/o4qt7pd/public/values?alt=json', function(data) { 
 		//console.log(data);
@@ -46,7 +51,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		.attr("height", function(d) {
 			return d; 
 		})
-		.attr("fill", "#3b5998");
+		.attr("fill", "#8b9dc3");
 
 	svg.selectAll("text")
 	   	.data(tobeDisplayed)

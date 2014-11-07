@@ -37,7 +37,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		.attr("height", function(d) {
 			return d; 
 		})
-		.attr("fill", "#0266C8");
+		.attr("fill", "#c0deed");
 
 	svg.selectAll("text")
 	   	.data(dataset)
@@ -100,7 +100,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				.attr("height", function(d) {
 					return d; 
 				})
-				.attr("fill", "#4099FF");
+				.attr("fill", "#c0deed");
 
 			svg.selectAll("text")
 			   	.data(tobeDisplayed)
