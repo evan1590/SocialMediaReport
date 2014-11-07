@@ -4,7 +4,7 @@ var barPadding = 10;
 
 
 $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/o4qt7pd/public/values?alt=json', function(data) { 
-		console.log(data);
+		//console.log(data);
 		var dataset = [];
 		var month = [];
 		var textValue = [];

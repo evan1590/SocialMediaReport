@@ -1,3 +1,7 @@
 .SectionTitle {
 	text-align: center;
 }
+
+.rect: hover {
+	fill: brown;
+}
