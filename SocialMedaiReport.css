@@ -6,6 +6,19 @@
 	fill: brown;
 }
 
+#Google {
+	background-color: #4D90FE;
+}
+
+#Google p{
+	color: white;
+	text-align: center;
+}
+
+#Google h1{
+	color: white;
+}
+
 #Facebook {
 	background-color: #3b5998;
 }

@@ -38,7 +38,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		.attr("height", function(d) {
 			return d; 
 		})
-		.attr("fill", "#0266C8");
+		.attr("fill", "#DC2924");
 
 	svg.selectAll("text")
 	   	.data(dataset)
