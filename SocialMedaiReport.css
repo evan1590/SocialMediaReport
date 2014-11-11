@@ -8,6 +8,7 @@
 
 #Google {
 	background-color: #4D90FE;
+	padding: 100px;
 }
 
 #Google p{
@@ -21,6 +22,7 @@
 
 #Facebook {
 	background-color: #3b5998;
+	padding: 100px;
 }
 
 #Facebook p{
@@ -34,6 +36,7 @@
 
 #Twitter {
 	background-color: #4099FF;
+	padding: 100px;
 }
 
 #Twitter p{
@@ -47,6 +50,7 @@
 
 #Instagram {
 	background-color: #3F729B;
+	padding: 100px;
 }
 
 #Instagram p{
@@ -57,4 +61,3 @@
 #Instagram h1{
 	color: white;
 }
-

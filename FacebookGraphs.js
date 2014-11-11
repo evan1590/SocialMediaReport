@@ -16,7 +16,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		var tobeDisplayed = [];
 	 	lengthofArray = data.feed.entry.length;
 	 	for (i = 0; i < lengthofArray; i++) { 
-		console.log(data.feed.entry[i]['gsx$facebooktotalfanengagement']['$t']);
 			//console.log(data.feed.entry[i]['gsx$numberofusers']['$t']);
 			textValue.push(data.feed.entry[i]['gsx$facebooktotalfanengagement']['$t']);
 			var value = data.feed.entry[i]['gsx$facebooktotalfanengagement']['$t'];
@@ -70,6 +69,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			.attr("font-size", "11px")
 			.attr("fill", "white")
 			.attr("text-anchor", "middle");
+	
 	$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/o4qt7pd/public/values?alt=json', function(data) { 
 				//console.log(data);
 				var dataset = [];
