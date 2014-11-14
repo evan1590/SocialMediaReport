@@ -15,7 +15,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 	
 	dataset.push(month[9]);
 	dataset.push(month[21]);
-	console.log(dataset);
 	
 	// Creat SVG element
 	var svg = d3.select("#twitterEngagement")
@@ -121,7 +120,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 					.attr("text-anchor", "middle");
 			
 			$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/opbh014/public/values?alt=json', function(data) { 
-				console.log(data);
 				var dataset = [];
 				dataset.push(data.feed.entry[21]['gsx$mostpopulartweet']['$t']);
 				$('#mostPopTweet').append(dataset[0]);

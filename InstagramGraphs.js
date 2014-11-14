@@ -11,8 +11,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 		var tobeDisplayed = [];
 	 	lengthofArray = data.feed.entry.length;
 	 	for (i = 0; i < lengthofArray; i++) { 
-		console.log(data.feed.entry[i]['gsx$instagramtotalengagement']['$t']);
-			//console.log(data.feed.entry[i]['gsx$numberofusers']['$t']);
 			textValue.push(data.feed.entry[i]['gsx$instagramtotalengagement']['$t']);
 			var value = data.feed.entry[i]['gsx$instagramtotalengagement']['$t'];
 			var result = value / 10;
@@ -24,7 +22,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 	dataset.push(month[21]);
 	tobeDisplayed.push(textValue[9]);
 	tobeDisplayed.push(textValue[21]);
-	console.log(dataset);
 	
 	// Creat SVG element
 	var svg = d3.select("#instagramEngagement")
@@ -80,7 +77,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 	
 		dataset.push(month[9]);
 		dataset.push(month[21]);
-		console.log(dataset);
+		
 		
 		// Creat SVG element
 		var svg = d3.select("#instagramRatio")
@@ -121,6 +118,13 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				.attr("font-size", "11px")
 				.attr("fill", "white")
 				.attr("text-anchor", "middle");
+
+		$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/opbh014/public/values?alt=json', function(data) { 
+				var dataset = [];
+				dataset.push(data.feed.entry[21]['gsx$mostpopularinstagram']['$t']);
+				$('#mostPopInsta').append(dataset[0]);
+					
+		});
 	});
 });
 

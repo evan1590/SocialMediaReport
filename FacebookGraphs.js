@@ -28,7 +28,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 	dataset.push(month[21]);
 	tobeDisplayed.push(textValue[9]);
 	tobeDisplayed.push(textValue[21]);
-	console.log(dataset);
 	
 	// Creat SVG element
 	var svg = d3.select("#facebookEngagement")
@@ -91,7 +90,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			dataset.push(month[21]);
 			tobeDisplayed.push(textValue[9]);
 			tobeDisplayed.push(textValue[21]);
-			console.log(dataset);
 			
 			// Creat SVG element
 			var svg = d3.select("#fansEngaged")
@@ -134,7 +132,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 					.attr("text-anchor", "middle");
 			
 			$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/opbh014/public/values?alt=json', function(data) { 
-				console.log(data);
 				var dataset = [];
 				dataset.push(data.feed.entry[21]['gsx$mostpopularfacebookpost']['$t']);
 				$('#mostPopPost').append(dataset[0]);
