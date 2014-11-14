@@ -183,8 +183,13 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 						.attr("fill", "white")
 						.attr("text-anchor", "middle");
 				
-				
+				$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
+					console.log(data);
+					var dataset = [];
+					dataset.push(data.feed.entry[21]['gsx$mobilesessions']['$t']);
+					$('#MobileSessions').append(dataset[0]);
+					
+				});
 			});
-		
 	});
 });

@@ -1,9 +1,15 @@
 .SectionTitle {
 	text-align: center;
+	color: white;
 }
 
 .rect: hover {
 	fill: brown;
+}
+
+#intro p {
+	color: black;
+	text-align: left;
 }
 
 #Google {
@@ -11,27 +17,9 @@
 	padding: 100px;
 }
 
-#Google p{
-	color: white;
-	text-align: center;
-}
-
-#Google h1{
-	color: white;
-}
-
 #Facebook {
 	background-color: #3b5998;
 	padding: 100px;
-}
-
-#Facebook p{
-	color: white;
-	text-align: center;
-}
-
-#Facebook h1{
-	color: white;
 }
 
 #Twitter {
@@ -39,30 +27,22 @@
 	padding: 100px;
 }
 
-#Twitter p{
-	color: white;
-	text-align: center;
-}
-
-#Twitter h1{
-	color: white;
-}
-
 #Instagram {
 	background-color: #3F729B;
 	padding: 100px;
 }
 
-#Instagram p{
+.Centered {
+	display: table;
+	margin: 0 auto;
+}
+
+h2 {
 	color: white;
 	text-align: center;
 }
 
-#Instagram h1{
+p {
 	color: white;
-}
-
-.Centered {
-	display: table;
-	margin: 0 auto;
+	text-align: center;
 }
