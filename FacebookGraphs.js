@@ -2,12 +2,6 @@ var svgWidth = 250;
 var svgHeight = 300;
 var barPadding = 10; 
 
-// var margin = {top: 10, right: 30, bottom: 30, left: 30},
-//     width = 960 - margin.left - margin.right,
-//     height = 500 - margin.top - margin.bottom;
-
-
-
 $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/o4qt7pd/public/values?alt=json', function(data) { 
 		//console.log(data);
 		var dataset = [];
@@ -77,8 +71,6 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 				var tobeDisplayed = [];
 			 	lengthofArray = data.feed.entry.length;
 			 	for (i = 0; i < lengthofArray; i++) { 
-					//console.log(data.feed.entry[i]['gsx$state']['$t']);
-					//console.log(data.feed.entry[i]['gsx$numberofusers']['$t']);
 					textValue.push(data.feed.entry[i]['gsx$facebookoffansengaged']['$t']);
 					var value = data.feed.entry[i]['gsx$facebookoffansengaged']['$t'];
 					var result = value * 10;

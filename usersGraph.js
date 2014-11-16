@@ -3,13 +3,10 @@ var svgHeight = 300;
 var barPadding = 15; 
 
 $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/od6/public/values?alt=json', function(data) { 
-		//console.log(data);
 		var dataset = [];
 		var month = [];
 	 	lengthofArray = data.feed.entry.length;
 	 	for (i = 0; i < lengthofArray; i++) { 
-			//console.log(data.feed.entry[i]['gsx$state']['$t']);
-			//console.log(data.feed.entry[i]['gsx$numberofusers']['$t']);
 			month.push(data.feed.entry[i]['gsx$users']['$t']);
 			
 		};
