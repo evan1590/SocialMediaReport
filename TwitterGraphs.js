@@ -122,7 +122,14 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/opbh014/public/values?alt=json', function(data) { 
 				var dataset = [];
 				dataset.push(data.feed.entry[21]['gsx$mostpopulartweet']['$t']);
-				$('#mostPopTweet').append(dataset[0]);
+				//$('#mostPopTweet').append(dataset[0]);
+				$.ajax({
+            		url: "https://api.twitter.com/1/statuses/oembed.json?url="+dataset[0],
+            		dataType: "jsonp",
+            		success: function(data){
+                		 $("#mostPopTweet").html(data.html);
+            		}
+        		});
 					
 			});
 		});
