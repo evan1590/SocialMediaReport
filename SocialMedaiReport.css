@@ -12,6 +12,10 @@
 	text-align: left;
 }
 
+#intro h1 {
+	text-align: center;
+}
+
 #Google {
 	background-color: #4D90FE;
 	padding: 100px;
