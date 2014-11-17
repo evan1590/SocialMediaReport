@@ -126,9 +126,9 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 			$.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5wwOQCHlNe4706vVS34/opbh014/public/values?alt=json', function(data) { 
 				var dataset = [];
 				dataset.push(data.feed.entry[21]['gsx$mostpopularfacebookpost']['$t']);
-				$('#mostPopPost').append(dataset[0]);
-				//$('#mostPopPost').append("<div id='fb-root'></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/all.js#xfbml=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <div class='fb-post' data-href=" + dataset[0] + " 'https://www.facebook.com/WheatonCollege/posts/10152813567153328'></div>");
-					
+				//$('#mostPopPost').append(dataset[0]);
+				//$('#mostPopPost').append("<div id='fb-root'></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"http://connect.facebook.net/en_US/all.js#xfbml=1\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <div class='fb-post' data-href=" + dataset[0] + " 'https://www.facebook.com/WheatonCollege/posts/10152813567153328'></div>");
+				$('#mostPopPost').append("<div class='fb-post' data-href="+ dataset[0] +"></div>");
 			});
 			
 		});
@@ -136,3 +136,17 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1gs8MWVzYQQ90xYe04JGitxE_5
 });
 
 
+
+// <div id="fb-root"></div>
+// <script>
+// (function(d, s, id) {
+//     var js, fjs = d.getElementsByTagName(s)[0];
+//     if (d.getElementById(id))
+//         return;
+//     js = d.createElement(s);
+//     js.id = id;
+//     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+//     fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
+// </script>
+// <div class="fb-post" data-href="YOUR_URL_HERE"></div>
