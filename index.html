@@ -9,14 +9,30 @@
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/datepicker.css">
 		<link rel="stylesheet" type="text/css" href="./SocialMedaiReport.css">
 		
 		<!-- Scripts to get the Graphs to work -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- look for more up-to-date jQuery -->
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 
+		<script src="./bower_components/bootstrap/js/bootstrap-datepicker.js"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				$('.datepicker').datepicker({
+					format: 'mm, yyyy',
+    				startDate: '-3d'
+				});
+			});
+		</script>
+
 	</head>
 	<body>
+		<div class="well">
+			<input class="datepicker" data-date-format="mm/dd/yyyy" type="text" name="date">
+		</div>
+		
 		<div class="container" id="intro">
 			<div>
 				<h1>Web and Social Analytics</h1>
